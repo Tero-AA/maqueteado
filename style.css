@@ -1,10 +1,11 @@
+
+/* Mobile (portrait): 300px - 575px */
 *{
     font-family: lato, sans-serif;
     background-color:whitesmoke;
     color:grey;
-    font-size: 14px;
-    box-sizing: content-box;
-    
+    font-size: 16px;
+    box-sizing: border-box;
   }
 
   header{
@@ -13,8 +14,9 @@
       top: 0px;
   }
 
+
 .container {  
-    width: 992px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     background: #fff;    
@@ -28,11 +30,10 @@
     font-size: 24px;
     float: left;
     background: #fff;   
+
 }
 
-.menu{
-    
-    position: relative;
+.menu{ 
     float: right;
     margin: none;
 }
@@ -51,18 +52,17 @@ li, a {
 }
 
 .main{
-    width: 70%;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    width: 90%;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    display: table;
-    box-sizing: border-box;
 }
 
 .wrapper{
-    width: 28%;
-    float: left;    
+    width: 85%;  
     text-align: center;
     padding-top: 10px;
 }
@@ -70,37 +70,42 @@ li, a {
 .box{
     border-radius: 5px;
     box-shadow:0 0 0 1px rgba(0, 0, 0, .06);
-    padding-top: 10px;
     display: inline-block;
     align-content: center;
-    width:65%;
+    width:85%;
     background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.box, .social, .featured{
+.featured {
+    background-color: white;
+}
+.box, .social {
     background-color: white;
     padding-left: 10px;
 }
 .box, p{
     background-color: white;
-    margin-left: 15px;
+    margin-left: 10px;
     text-align: left;
 }
 .box, h2{
     background-color: white;
-    margin-left: 15px;
+    margin-left: 10px;
     text-align: left;
 }
 
 .box, h3 {
     background-color: white;
-    margin-left: 15px;
+    margin-left: 10px;
     text-align: left;
 }
 
 .box, h6{
     font-size: 10px;
     background-color: white;
+    text-align: center;
 }
 
 
@@ -108,7 +113,7 @@ li, a {
     width: 120px;
     height: 115px;
     border-radius: 500px;
-    margin-left: 45px;
+    margin-top: 20px;
 }
 
 .line{
@@ -122,27 +127,26 @@ li, a {
 }
 article{
     float: left;    
-    text-align: left;
-    width: 70%;
-    padding-top: 10px;
-    padding-left: 0px;    
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;    
     box-sizing: border-box; 
 }
 .post{
-    
-    width: 100%;    
-    padding-bottom:20px;     
-    box-sizing: border-box;
-    overflow:hidden;
-    float: right;
-    
+    border-radius: 5px;
+    box-shadow:0 0 0 1px rgba(0, 0, 0, .06);
+    display: inline-block;
+    align-content: center;
+    width:85%;
+    background-color: #fff;
+    margin-top: 10px;
 }
 .content{
     border-radius: 5px;
     box-shadow:0 0 0 1px rgba(0, 0, 0, .06);
     background-color: white;   
     padding: 20px; 
-    
 }
 .content p, a{    
     margin-bottom: 15px;    
@@ -155,8 +159,8 @@ article{
     text-decoration: underline;
 }
 .post-img{
-    width: 150px;
-    height: 130px;
+    width: 100px;
+    height: 90px;
     float: left;
     padding-top: 10px;
     padding-left: 5px;
@@ -168,17 +172,50 @@ article{
     background-color: transparent;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 26px;
     line-height: 22px;
     color: black;
 }
 .post h4{
     background-color: transparent;
-    display: inline-block;
-    margin-right: 8px;
+    margin-left: 10px;
     color: #aaa;
-    font-size: 10px;
     line-height: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: left;
+    font-size: 14px;
+}
+/* Mobile (landscape): 576px - 767px */ 
+
+@media (min-width:576px){
+    *{
+        font-size: 18px;
+    }
+
+}
+
+/* Tablet: 768px - 991px */
+
+@media (min-width:768px){
+    *{
+        font-size: 20px;
+    }
+    .box {
+    width:30%;
+    float: left;
+    display: inline;
+    }
+    .post{
+    float: right;
+    width:60%;
+    display: inline;
+    }
+    .wrapper{
+        float: left;
+    }    
+
+    article{
+        float: right;
+        display: inline;
+    }
 }
